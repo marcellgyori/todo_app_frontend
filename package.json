@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "format": "prettier --write .",
-    "heroku-postbuild": "ng build --aot --prod --max_old_space_size=2560 node_modules/.bin/react-scripts"
+    "heroku-postbuild": "ng build --aot --prod"
   },
   "engines": {
     "node": "12.22.6",
