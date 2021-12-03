@@ -1,0 +1,12 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+mat-form-field {
+  display: block;
+  width: min(350px, 60vw);
+}

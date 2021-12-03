@@ -1,0 +1,20 @@
+<mat-card class="todo-card">
+  <mat-card-title [ngClass]="{'done': task.isDone}" (click)="updateDone()">{{task.title}}</mat-card-title>
+  <div>
+    <mat-icon aria-hidden="false" color="warn" aria-label="Example home icon" (click)='switch = !switch' >edit</mat-icon>
+    <mat-icon aria-hidden="false" color="primary" aria-label="Example home icon"(click)='delete()'>delete_forever</mat-icon>
+  </div>
+  <mat-divider inset></mat-divider>
+  <div *ngIf="switch" inset>
+    <mat-form-field class="add-input" appearance="fill" color="warn">
+      <mat-label>What do you need to do? You can update here.</mat-label>
+      <input matInput type="text" [(ngModel)]="value">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="editTask(value)">
+        <mat-icon color="primary">add</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate" color="warn"></mat-progress-bar>
+    </mat-card-footer>
+  </div>
+</mat-card>

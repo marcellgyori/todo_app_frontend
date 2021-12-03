@@ -1,0 +1,7 @@
+<mat-form-field class="add-input" appearance="fill">
+  <mat-label>What do you need to do?</mat-label>
+  <input matInput type="text" [(ngModel)]="value">
+  <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="createTask(value)">
+    <mat-icon color="primary">add</mat-icon>
+  </button>
+</mat-form-field>

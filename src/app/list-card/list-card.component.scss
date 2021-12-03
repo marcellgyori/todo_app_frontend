@@ -1,0 +1,28 @@
+p {
+  color: white;
+}
+
+.todo-card {
+  margin: 0.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+mat-icon {
+  cursor: pointer;
+  margin: 0.5vw;
+}
+
+.add-input {
+  margin-top: 2vw;
+  margin-bottom: 0;
+  width: max(50vw);
+}
+
+.done {
+  opacity: 0.5;
+}
+
+mat-card-title {
+  cursor: pointer;
+}

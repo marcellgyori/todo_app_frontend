@@ -1,0 +1,8 @@
+<div class="container">
+  <div *ngIf="tasks.length>0">
+    <div *ngFor='let task of tasks'>
+      <dashboard-list-card [task]='task'></dashboard-list-card>
+    </div>
+  </div>
+  <mat-card *ngIf="tasks.length===0" class="no-task"><h1>You have no task to do left.</h1></mat-card>
+</div>
