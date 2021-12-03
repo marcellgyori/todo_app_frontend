@@ -7,8 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "format": "prettier --write .",
-    "heroku-postbuild": "ng build --prod"
+    "format": "prettier --write ."
+  },
+  "engines": {
+    "node": "12.22.6",
+    "npm": "6.14.15"
   },
   "private": true,
   "dependencies": {
