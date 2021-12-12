@@ -17,7 +17,7 @@ import { MatInputModule } from '@angular/material/input';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ListComponent } from './list/list.component';
 import { ListCardComponent } from './list-card/list-card.component';
-import { SearchFilterComponent } from './search-filter/search-filter.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
@@ -30,7 +30,7 @@ import { MatDividerModule } from '@angular/material/divider';
     DashboardComponent,
     ListComponent,
     ListCardComponent,
-    SearchFilterComponent,
+    AddTaskComponent,
   ],
   imports: [
     BrowserModule,
