@@ -1,9 +1,6 @@
 <mat-toolbar color="accent">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" color="primary">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span class="app-name">My App</span>
-  <span class="example-spacer"></span>
+  <button mat-button color="primary">Todo app</button>
+  <span class="spacer"></span>
   <div *ngIf="!isCurrentUser">
     <button mat-button color="primary" (click)="openDialog(false)">Log in</button>
     <button mat-button color="primary" (click)="openDialog(true)">Register</button>

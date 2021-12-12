@@ -1,15 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import {
-  MatDialog,
-  MatDialogRef,
-  MAT_DIALOG_DATA,
-} from '@angular/material/dialog';
-import {
-  FormBuilder,
-  FormControl,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { Component, Inject } from '@angular/core';
+import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { AuthService } from '../core/services/auth.service';
 import { User } from '../core/models';
@@ -68,6 +59,7 @@ export class AuthDialog {
     if (this.formGroup.invalid) {
       return;
     }
+    this.loading = true;
     let user = new User();
     user.email = this.f.email.value;
     user.password = this.f.password.value;
